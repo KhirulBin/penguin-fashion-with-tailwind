@@ -14,8 +14,9 @@
     <header class="bg-[#FFFBF0] px-34">
         <!-- nav-section -->
         <nav class="flex justify-between py-7 items-center">
-            <img src="./public/icons/logo.png" alt="" class="w-72">
-            <ul class="flex  gap-14">
+            <img src="./public/icons/logo.png" alt="" class="w-72 md:w-56 lg:w-72">
+            <ul
+                class="hidden lg:gap-14 md:gap-5 md:block lg:block md:flex lg:flex lg:text-base md:text-xs font-semibold">
                 <li><a href="">Home</a></li>
                 <li><a href="">Product</a></li>
                 <li><a href="">About us</a></li>
@@ -24,11 +25,13 @@
         </nav>
 
         <!-- banner section -->
-        <section class="flex lg:flex-row md:flex-row sm:flex-col lg:gap-75 sm:gap-11 items-center pb-30">
-            <div class="">
-                <h1 class="uppercase text-7xl font-bebas-neue"><span class="text-amber-400">Be the Penguins</span><br>
+        <section class="flex flex-col lg:flex-row md:flex-col gap-11 items-center pb-30">
+            <div class="w-full">
+                <h1 class="uppercase w-full text-5xl md:text-6xl lg:text-7xl font-bebas-neue"><span
+                        class="text-amber-400">Be the Penguins</span><br>
                     of Winter</h1>
-                <p class="text-[#3E3E3E] text-base w-2/3 my-2">Lorem Ipsum is simply dummy text of the printing
+                <p class="text-[#3E3E3E] text-base md:full lg:w-2/3 my-2">Lorem Ipsum is simply dummy text of the
+                    printing
                     and typesetting industry.</p>
                 <button class="flex gap-2 bg-linear-to-r from-[#A4BC46] to-[#85A019] px-8 py-4.5 rounded-[10px]">
                     <img src="./public/icons/shopping-cart 1.png" alt="shopping-cart" class="w-6 h-6">
@@ -42,9 +45,9 @@
     <!-- main section -->
     <main>
         <!-- women -->
-        <section class="lg:mx-33 md:mx-6">
+        <section class="mx-4 lg:mx-33 md:mx-6">
             <h3 class="text-5xl font-bebas-neue mt-12 mb-5">Women Jacket</h3>
-            <div class="flex gap-7.5 lg:flex-row sm:flex-col">
+            <div class="grid gap-7.5 lg:grid-cols-3 md:grid-cols-2">
                 <div class="py-6 px-4 rounded-[20px] shadow-xl flex flex-col gap-3">
                     <img src="./public/images/jacket-1.png" alt="" class="bg-[#F1F1F1] px-15 py-7 rounded-[20px]">
                     <h4 class="text-2xl font-bold">Yellow Coat Jacket </h4>
@@ -90,9 +93,87 @@
             </div>
         </section>
         <!-- man -->
+        <section class="mx-4 lg:mx-33 md:mx-6">
+            <h3 class="text-5xl font-bebas-neue mt-12 mb-5">Man Jacket</h3>
+            <div class="grid gap-7.5 lg:grid-cols-3 md:grid-cols-2">
+                <div class="py-6 px-4 rounded-[20px] shadow-xl flex flex-col gap-3">
+                    <img src="./public/images/jacket-4.png" alt="" class="bg-[#F1F1F1] px-15 py-7 rounded-[20px]">
+                    <h4 class="text-2xl font-bold">Yellow Coat Jacket </h4>
+                    <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#FABE4C] font-black text-4xl">$234</h2>
+                        <button
+                            class="flex gap-2 bg-linear-to-r from-[#A4BC46] to-[#85A019] px-8 py-4.5 rounded-[10px]">
+                            <img src="./public/icons/shopping-cart 1.png" alt="shopping-cart" class="w-6 h-6">
+                            <h6 class="text-white uppercase">Buy Now</h6>
+                        </button>
+                    </div>
+                </div>
+                <div class="py-6 px-4 rounded-[20px] shadow-xl flex flex-col gap-3">
+                    <img src="./public/images/jacket-5.png" alt="" class="bg-[#F1F1F1] px-15 py-7 rounded-[20px]">
+                    <h4 class="text-2xl font-bold">Ladies Jacket</h4>
+                    <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#FABE4C] font-black text-4xl">$234</h2>
+                        <button
+                            class="flex gap-2 bg-linear-to-r from-[#A4BC46] to-[#85A019] px-8 py-4.5 rounded-[10px]">
+                            <img src="./public/icons/shopping-cart 1.png" alt="shopping-cart" class="w-6 h-6">
+                            <h6 class="text-white uppercase">Buy Now</h6>
+                        </button>
+                    </div>
+                </div>
+                <div class="py-6 px-4 rounded-[20px] shadow-xl flex flex-col gap-3">
+                    <img src="./public/images/jacket-6.png" alt="" class="bg-[#F1F1F1] px-15 py-7 rounded-[20px]">
+                    <h4 class="text-2xl font-bold">Woman Leather Jacket</h4>
+                    <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#FABE4C] font-black text-4xl">$234</h2>
+                        <button
+                            class="flex gap-2 bg-linear-to-r from-[#A4BC46] to-[#85A019] px-8 py-4.5 rounded-[10px]">
+                            <img src="./public/icons/shopping-cart 1.png" alt="shopping-cart" class="w-6 h-6">
+                            <h6 class="text-white uppercase">Buy Now</h6>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- footer section -->
-    <footer>
+    <footer class="flex flex-col-reverse md:flex-col-reverse lg:flex-row gap-12 md:gap-16 lg:gap-20 items-center  justify-between mt-42 mx-4 md:mx-8 lg:mx-42 mb-50 text-center md:text-start lg:text-start">
+        <div class="flex flex-col gap-10">
+            <div class="flex flex-col md:flex-row lg:flex-row items-center gap-9 py-5 px-10 rounded-[20px] shadow-xl">
+                <img src="./public/icons/house.png" alt="" class="w-[78px]">
+                <div class="">
+                    <h4 class="font-bold text-2xl">Find the Perfect Fit</h4>
+                    <p class="mt-3">Everybody is different, which is why we
+                        offer styles for every body.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row lg:flex-row items-center gap-9 py-5 px-10 rounded-[20px] shadow-xl">
+                <img src="./public/icons/box.png" alt="" class="w-[78px]">
+                <div class="">
+                    <h4 class="font-bold text-2xl">Find the Perfect Fit</h4>
+                    <p class="mt-3">Everybody is different, which is why we
+                        offer styles for every body.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row lg:flex-row items-center gap-9 py-5 px-10 rounded-[20px] shadow-xl">
+                <img src="./public/icons/question.png" alt="" class="w-[78px]">
+                <div class="">
+                    <h4 class="font-bold text-2xl">Find the Perfect Fit</h4>
+                    <p class="mt-3">Everybody is different, which is why we
+                        offer styles for every body.</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full md:w-full lg:w-1/2">
+            <img src="./public/images/shopping.png" alt="">
+        </div>
 
     </footer>
 </body>
